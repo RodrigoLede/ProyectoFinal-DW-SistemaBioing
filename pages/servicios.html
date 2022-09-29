@@ -1,6 +1,4 @@
-
-<!-- Trabajando html con Bootstrap -->
-
+<!--PROYECTO FINAL SISTEMA DE MANTENIMIENTO DE INGENIERÍA - servicios-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,19 +45,25 @@
 </header>
 
 <!-- Main -->
- <main class="contenedorBanner">
-    <div class="row">
-        <img src="../images/CT.png" class="bannerPages kenburns-top img-fluid col-12 m-1" alt="Imagen de presentación">
-        <h1>Nuestro Servicio</h1>
-        <p class="col-6 p-3 m-4">Brindamos un servicio profesional e integral,avocado, principalmente, a todo establecimiento que cuente con equipamiento medico ya sea de mediana como alta complejidad. Quienes quieran, ademas, contar con información estadistica en tiempo real acerca de costos, tiempos de paradas y rendimiento de sus dispositivos.
-        <br>
-        Ofrecemos desarrollar planes de accion como asi estrategias de stock de repuestos y planificaciones de mantenimientos predictivos y preventivos. 
-        <br>
-        Agilizaremos y formalizaremos los medios de comunicación y avisos de fallas, mediante sistemas de reportes de solicitudes de servicios.
-        </p>
-        <img src="../images/images (1).jfif" class="col-6 w-25 mt-5 mb-5" alt="imagen parrafo">
+ <main class="contenedorBanner" id="mainServicios">
+    <div class="imgServicios">
+      <img src="../images/CT.png" class="bannerPages kenburns-top img-fluid col-12 m-1" alt="Imagen de presentación">
+    </div> 
+    <div class="introServ"> 
+      <h1>Nuestro Servicio</h1>
     </div>
-    <div class="row">
+    <div class="txServicios">  
+      <p class="p1">Brindamos un servicio profesional e integral,avocado, principalmente, a todo establecimiento que cuente con equipamiento medico ya sea de mediana como alta complejidad. Quienes quieran, ademas, contar con información estadistica en tiempo real acerca de costos, tiempos de paradas y rendimiento de sus dispositivos.
+      <br>
+      Ofrecemos desarrollar planes de accion como asi estrategias de stock de repuestos y planificaciones de mantenimientos predictivos y preventivos. 
+      <br>
+      Agilizaremos y formalizaremos los medios de comunicación y avisos de fallas, mediante sistemas de reportes de solicitudes de servicios.
+      </p>
+    </div>
+    <div class="imgServ">  
+      <img src="../images/images (1).jfif" height="300" alt="imagen parrafo">
+    </div>
+    <section class="bloquesServicios">
         <div class="card col-3 m-4" style="width: 18rem;">
           <img src="../images/Halcyon500.png" height="250" class="card-img-top" alt="...">
           <div class="card-body">
@@ -84,23 +88,24 @@
             <h5 class="card-title">Mamografía</h5>
           </div>
         </div>
-      </div>
+    </section>
   </main>
 
   <hr>
 
-  <section class="qrs d-flex">
-    <div>
-      <img src="../images/Solicitudes TomoCanon.png" width="100" height="100" alt="Qr solicitudes">
+  <section class="qrsServicios">
+    <div class="qr1Ser">
+      <img src="../images/Solicitudes TomoCanon.png" width="183" height="183" alt="Qr solicitudes">
       <a class="btn botonFormlink" href="" role="button">Formulario de soporte</a>
     </div>
-    <div>
-      <img src="../images/Solicitudes TomoCanon.png" width="100" height="100" alt="Qr Estado de los equipos">
+    <div class="qr2Ser">
+      <img src="../images/Solicitudes TomoCanon.png" width="183" height="183" alt="Qr Estado de los equipos">
       <a class="btn botonFormlink" href="" role="button">Formulario de soporte</a>
     </div>
-
-    <iframe class="videoFDM" data-aos="fade-right" src="https://www.youtube.com/embed/iLgzxG7j40U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    </iframe>
+    <div class="vdServicios">
+      <iframe class="videoFDM" width="780px" data-aos="fade-right" src="https://www.youtube.com/embed/iLgzxG7j40U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
   </section>
 
 <!-- Footer -->
