@@ -45,8 +45,8 @@
     </nav>
 </header>    
 <!--main -->
-<main>
-    <div class="contenedorBanner">
+<main class="contenedorBanner" id="mainContactenos">
+    <div class="imgContactenos" >
         <img src="../images/ContactFinal.jpg" class="bannerPages kenburns-top img-fluid col-12 m-1" alt="Imagen de presentación">
     </div>
         <div class="Encabex">
@@ -79,7 +79,7 @@
         <button type="button" class="btn botonEmpleos">Empleos</button>
     </fieldset>
     <hr>
-    <form>
+    <form class="formCont">
         <fieldset class="field">
             <legend id="formularioAsistencia"> Formulario de Asistencia, completa los siguientes campos</legend>
             <div class="row mb-3">
@@ -117,7 +117,7 @@
             </div>
             <div class="row mb-3">
                 <label for="FormComentario" class="form-label">Dejanos un Comentario</label>
-                <textarea class="form-control foco" id="FormComentario" rows="3" placeholder="Escribí los detalles"></textarea>
+                <textarea class="form-control foco detalles" id="FormComentario" rows="3" placeholder="Escribí los detalles"></textarea>
               </div>
         </fieldset>    
         <fieldset class="row mb-3">
@@ -132,11 +132,10 @@
                 </div>
             </div>
             <div class="col-12 d-flex">
-                <button type="submit" class="btn botonEnviar">Enviar</button>
-                <button type="reset" class="btn botonBorrar">Borrar</button>
+                <button type="submit" class="btn boto btn-outline-secondary botonEnviar">Enviar</button>
+                <button type="reset" class="btn boto btn-outline-secondary botonBorrar">Borrar</button>
             </div>  
         </fieldset>
-          
     </form>
 </main>
 

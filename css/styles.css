@@ -87,7 +87,7 @@ hr {
       grid-area: txEntrada;
       margin: 0;
       text-align: center; }
-      #pagPrincipal .txEntrada h1 {
+      #pagPrincipal .txEntrada h2 {
         padding-top: 50px;
         font-size: large; }
     #pagPrincipal .container {
@@ -275,25 +275,93 @@ hr {
       width: 190px;
       background-color: rgba(215, 202, 157, 0.9); }
 
+.botonera {
+  height: 350px;
+  display: flex;
+  align-content: space-between;
+  margin: 30px; }
+  .botonera .btn-group {
+    background-color: rgba(73, 52, 214, 0.249); }
+    .botonera .btn-group .botito {
+      background-color: rgba(43, 23, 171, 0.249); }
+
+/* Pagina Quienes Somos*/
+#mainQS {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "imgQS imgQS imgQS" "introQS introQS introQS" "box1 box2 box3";
+  padding: 0 10px 20px 10px;
+  gap: 10px; }
+  #mainQS .imgQS {
+    grid-area: imgQS; }
+  #mainQS .introQS {
+    grid-area: introQS;
+    text-align: center;
+    padding: 30px 10px; }
+  #mainQS .box1 {
+    grid-area: box1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    #mainQS .box1 .title {
+      font-size: x-large; }
+    #mainQS .box1 p {
+      color: salmon; }
+  #mainQS .box2 {
+    grid-area: box2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    #mainQS .box2 .title {
+      font-size: x-large; }
+    #mainQS .box2 p {
+      color: salmon; }
+  #mainQS .box3 {
+    grid-area: box3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    #mainQS .box3 .title {
+      font-size: x-large; }
+    #mainQS .box3 p {
+      color: salmon; }
+
+.mision {
+  height: fit-content;
+  display: grid;
+  grid-template-rows: 80px auto;
+  grid-template-areas: "imgBottomQS intro2QS intro2QS" "imgBottomQS descriQS descriQS";
+  gap: 5px; }
+  .mision .imgBottomQS {
+    grid-area: imgBottomQS;
+    display: flex;
+    align-items: stretch; }
+  .mision .intro2QS {
+    grid-area: intro2QS;
+    text-align: left;
+    padding: 10px; }
+    .mision .intro2QS h2 {
+      color: #6c856c; }
+  .mision .descriQS {
+    grid-area: descriQS;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px; }
+    .mision .descriQS .txQS {
+      color: whitesmoke;
+      text-align: justify;
+      font-size: large; }
+
 /* Pagina Contactenos*/
-.cont_main {
-  display: grid;
-  justify-content: stretch;
-  grid-template-columns: auto;
-  grid-template-rows: 320px 500px;
-  gap: 10px;
-  margin: 5px 10px 20px 10px;
-  grid-template-areas: "cont_img" "cont_sec";
-  background-color: antiquewhite; }
+#mainContactenos {
+  padding: 30px 50px; }
 
-.cont_img {
-  grid-area: cont_img;
-  align-self: center;
-  justify-self: center; }
+.formCont {
+  background-color: #8d4d4d; }
 
-.field {
-  grid-area: cont_sec;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(4, 100px);
-  grid-template-areas: "name" "mail" "place" "option"; }
+.boto {
+  background-color: whitesmoke; }
