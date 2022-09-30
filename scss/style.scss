@@ -300,10 +300,55 @@ hr{
       display: flex;
       align-items: stretch;
    }
-
 }
 
+/* Pagina Ingenieria*/
 
+.calendario{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   grid-template-areas: "logo1 logo2 logo3";
+   margin: 1rem;
+   align-items: center;
+   justify-items:center;
+   .logo1{
+      grid-area: logo1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items:center;
+      height: 230px;
+      .btn{
+         width: 190px;
+         background-color: $color-header;
+      }
+   }
+   .logo2{
+      grid-area: logo2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 230px;
+      .btn{
+         width: 190px;
+         background-color: $color-header;
+      }
+   }
+   .logo3{
+      grid-area: logo3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 230px;
+      .btn{
+         width: 190px;
+         background-color: $color-header;
+      }
+   }
+}
 
   /* Pagina Contactenos*/
   .cont_main{

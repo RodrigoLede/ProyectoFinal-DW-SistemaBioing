@@ -235,6 +235,46 @@ hr {
     display: flex;
     align-items: stretch; }
 
+/* Pagina Ingenieria*/
+.calendario {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "logo1 logo2 logo3";
+  margin: 1rem;
+  align-items: center;
+  justify-items: center; }
+  .calendario .logo1 {
+    grid-area: logo1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 230px; }
+    .calendario .logo1 .btn {
+      width: 190px;
+      background-color: rgba(215, 202, 157, 0.9); }
+  .calendario .logo2 {
+    grid-area: logo2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 230px; }
+    .calendario .logo2 .btn {
+      width: 190px;
+      background-color: rgba(215, 202, 157, 0.9); }
+  .calendario .logo3 {
+    grid-area: logo3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 230px; }
+    .calendario .logo3 .btn {
+      width: 190px;
+      background-color: rgba(215, 202, 157, 0.9); }
+
 /* Pagina Contactenos*/
 .cont_main {
   display: grid;
