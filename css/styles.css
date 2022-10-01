@@ -358,10 +358,63 @@ hr {
 
 /* Pagina Contactenos*/
 #mainContactenos {
-  padding: 30px 50px; }
+  padding: 30px 40px; }
+  #mainContactenos .imgContactenos {
+    display: block; }
+  #mainContactenos .encabex {
+    padding: 3em 0; }
+    #mainContactenos .encabex h1 {
+      text-align: left;
+      font-size: 4rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: italic; }
+  #mainContactenos .introPages {
+    padding: 2em 0 3em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 45px;
+    padding-right: 45px; }
+    #mainContactenos .introPages .ayuda h2 {
+      color: #000;
+      font-size: 24px;
+      letter-spacing: .5px;
+      padding-bottom: 2em;
+      text-transform: none; }
+    #mainContactenos .introPages .ayuda p {
+      padding-bottom: 1.25rem;
+      text-align: justify; }
+  #mainContactenos .field {
+    padding: 2em 0 3em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 45px;
+    padding-right: 45px; }
+    #mainContactenos .field legend {
+      color: #000;
+      font-size: 24px;
+      letter-spacing: .5px;
+      padding-bottom: 2em;
+      text-transform: none; }
+    #mainContactenos .field li {
+      padding-bottom: 1.25rem;
+      font-family: Arial, Helvetica, sans-serif; }
+    #mainContactenos .field p {
+      padding-bottom: 1.25rem;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: justify; }
 
 .formCont {
   background-color: #8d4d4d; }
 
 .boto {
-  background-color: whitesmoke; }
+  background-color: #292929;
+  border-color: #292929;
+  color: whitesmoke;
+  font-size: 16px;
+  min-height: 48px;
+  min-width: 166px;
+  line-height: 35px;
+  padding: 4px 16px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 1em; }

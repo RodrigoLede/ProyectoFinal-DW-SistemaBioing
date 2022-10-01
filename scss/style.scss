@@ -456,12 +456,74 @@ hr{
 
   /* Pagina Contactenos*/
 #mainContactenos{
-   padding: 30px 50px;
+   padding: 30px 40px;
+   .imgContactenos{
+   display: block;
+   }
+   .encabex{
+      padding: 3em 0;
+      h1{
+         text-align: left;
+         font-size: 4rem;
+         font-family: Arial, Helvetica, sans-serif;
+         font-style: italic;
+      }
+   }
+   .introPages{
+      padding: 2em 0 3em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 45px;
+      padding-right: 45px;
+      .ayuda h2{
+         color: #000;
+         font-size: 24px;
+         letter-spacing: .5px;
+         padding-bottom: 2em;
+         text-transform: none;
+      }
+      .ayuda p{
+         padding-bottom: 1.25rem;
+         text-align: justify;
+      }
+   }
+   .field{
+      padding: 2em 0 3em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 45px;
+      padding-right: 45px;
+      legend{
+         color: #000;
+         font-size: 24px;
+         letter-spacing: .5px;
+         padding-bottom: 2em;
+         text-transform: none;
+      }
+      li{
+         padding-bottom: 1.25rem;
+         font-family: Arial, Helvetica, sans-serif;
+      }
+      p{
+         padding-bottom: 1.25rem;
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: justify; 
+      }
+   }
 }
-
  .formCont{
    background-color: rgb(141, 77, 77);
  }
  .boto{
-   background-color: whitesmoke;
- }
+   background-color: #292929;
+   border-color: #292929;
+   color: whitesmoke;
+   font-size: 16px;
+   min-height: 48px;
+   min-width: 166px;
+   line-height: 35px;
+   padding: 4px 16px;
+   vertical-align: middle;
+   text-align: center;
+   padding: 1em;
+}
