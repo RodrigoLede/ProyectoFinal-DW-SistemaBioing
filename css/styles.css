@@ -193,6 +193,11 @@ hr {
     grid-area: introServ;
     text-align: center;
     padding: 30px 10px; }
+    #mainServicios .introServ h1 {
+      font-style: italic;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 40px;
+      font-weight: 700; }
   #mainServicios .txServicios {
     grid-area: txServicios;
     display: flex;
@@ -205,6 +210,9 @@ hr {
     grid-area: bloquesServicios;
     display: flex;
     justify-content: space-around; }
+    #mainServicios .bloquesServicios .card-title {
+      text-align: center;
+      text-decoration: underline; }
 
 .qrsServicios {
   display: grid;
@@ -384,7 +392,7 @@ hr {
       padding-bottom: 1.25rem;
       text-align: justify; }
   #mainContactenos .field {
-    padding: 2em 0 3em;
+    padding: 2em 0 1.5em;
     margin-left: auto;
     margin-right: auto;
     padding-left: 45px;
@@ -404,7 +412,27 @@ hr {
       text-align: justify; }
 
 .formCont {
-  background-color: #8d4d4d; }
+  background-color: #8d4d4d;
+  padding-bottom: 1.25rem; }
+
+.check {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.2em 0.5em 0.5em;
+  margin-left: 20px;
+  margin-right: auto; }
+  .check .leyenda {
+    font-size: large; }
+
+.botones {
+  display: flex;
+  gap: 1rem;
+  margin-left: 20px;
+  margin-right: auto; }
 
 .boto {
   background-color: #292929;
