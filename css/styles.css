@@ -272,7 +272,7 @@ hr {
     display: flex;
     align-items: stretch; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 512px) {
   #mainServicios {
     display: grid;
     grid-template-columns: auto;
@@ -317,7 +317,7 @@ hr {
     .qrsServicios .vdServicios iframe {
       width: 360px; } }
 
-@media screen and (min-width: 500px) and (max-width: 1000px) {
+@media screen and (min-width: 512px) and (max-width: 800px) {
   #mainServicios {
     display: grid;
     grid-template-columns: auto;
@@ -328,8 +328,8 @@ hr {
       display: grid;
       justify-content: center; }
       #mainServicios .imgServ img {
-        height: 150px;
-        width: 360px; }
+        height: 215px;
+        width: 500px; }
     #mainServicios .introServ {
       grid-area: introServ;
       padding: 10px; }
@@ -344,7 +344,7 @@ hr {
       margin: 0;
       padding: 5px; }
       #mainServicios .txServicios .p1 {
-        font-size: small; }
+        font-size: medium; }
     #mainServicios .bloquesServicios {
       grid-area: bloquesServicios;
       display: grid;
@@ -354,13 +354,13 @@ hr {
   .qrsServicios {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-items: center;
     row-gap: 10px;
-    grid-template-areas: "qr1Ser" "qr2Ser" "vdServicios";
+    grid-template-areas: "qr1Ser qr2Ser" "vdServicios vdServicios";
     margin: 0; }
     .qrsServicios .vdServicios iframe {
-      width: 360px; } }
+      width: 500px; } }
 
 /* Pagina Ingenieria*/
 .calendario {
@@ -482,6 +482,51 @@ hr {
       color: whitesmoke;
       text-align: justify;
       font-size: large; }
+
+@media screen and (min-width: 800px) and (max-width: 1350px) {
+  #mainServicios {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "imgServicios" "introServ" "imgServ" "txServicios" "bloquesServicios";
+    justify-content: center;
+    padding: 0 10px 20px 10px;
+    gap: 5px; }
+    #mainServicios .imgServ {
+      display: grid;
+      justify-content: center; }
+      #mainServicios .imgServ img {
+        height: 360px;
+        width: 800px; }
+    #mainServicios .introServ {
+      grid-area: introServ; }
+      #mainServicios .introServ h1 {
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 45px;
+        font-weight: 800;
+        line-height: 0; }
+    #mainServicios .txServicios {
+      grid-area: txServicios;
+      margin: 0; }
+      #mainServicios .txServicios .p1 {
+        font-size: large; }
+    #mainServicios .bloquesServicios {
+      grid-area: bloquesServicios;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      justify-items: center; }
+  .qrsServicios {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    row-gap: 10px;
+    grid-template-areas: "qr1Ser qr2Ser" "vdServicios vdServicios";
+    margin: 0; }
+    .qrsServicios .vdServicios iframe {
+      width: 780px; } }
 
 /* Pagina Contactenos*/
 #mainContactenos {
