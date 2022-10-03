@@ -412,6 +412,39 @@ hr {
     .botonera .btn-group .botito {
       background-color: rgba(43, 23, 171, 0.249); }
 
+@media screen and (max-width: 600px) {
+  #mainIng {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "imgIng" "encabex" "botonera";
+    justify-content: center; }
+    #mainIng .imgIng {
+      grid-area: imgIng; }
+    #mainIng .encabex {
+      grid-area: encabex; }
+      #mainIng .encabex h2 {
+        font-size: medium;
+        text-align: center; }
+    #mainIng .botonera {
+      grid-area: botonera;
+      margin: 0; }
+      #mainIng .botonera .btn {
+        font-size: xx-small; }
+  .calendario {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "logo1" "logo2" "logo3";
+    justify-content: center;
+    row-gap: 15px;
+    padding: 2em; }
+    .calendario .logo1 {
+      grid-area: logo1; }
+    .calendario .logo2 {
+      grid-area: logo2; }
+    .calendario .logo3 {
+      grid-area: logo3; } }
+
 /* Pagina Quienes Somos*/
 #mainQS {
   display: grid;

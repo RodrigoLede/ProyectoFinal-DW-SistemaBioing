@@ -532,6 +532,56 @@ hr{
    }
 }
 
+@media screen and (max-width: 600px) {
+   #mainIng{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-areas: "imgIng"
+                           "encabex"
+                           "botonera";
+      justify-content: center;
+      .imgIng{
+         grid-area: imgIng;
+      }
+      .encabex{
+         grid-area: encabex;
+         h2{
+            font-size: medium;
+            text-align: center;
+         }
+      }
+      .botonera{
+         grid-area: botonera;
+         margin: 0;
+         .btn{
+            font-size: xx-small;
+         }
+
+      }
+   }
+   .calendario{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "logo1"
+                           "logo2"
+                           "logo3";
+      justify-content: center;
+      row-gap: 15px;
+      padding: 2em;
+      .logo1{
+         grid-area: logo1;
+      }
+      .logo2{
+         grid-area: logo2;
+      }
+      .logo3{
+         grid-area: logo3;
+      }
+
+   }
+}
+
   /* Pagina Quienes Somos*/
 
 #mainQS{
