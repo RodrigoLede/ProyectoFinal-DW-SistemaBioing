@@ -445,77 +445,6 @@ hr {
     .calendario .logo3 {
       grid-area: logo3; } }
 
-/* Pagina Quienes Somos*/
-#mainQS {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "imgQS imgQS imgQS" "introQS introQS introQS" "box1 box2 box3";
-  padding: 0 10px 20px 10px;
-  gap: 10px; }
-  #mainQS .imgQS {
-    grid-area: imgQS; }
-  #mainQS .introQS {
-    grid-area: introQS;
-    text-align: center;
-    padding: 30px 10px; }
-  #mainQS .box1 {
-    grid-area: box1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-    #mainQS .box1 .title {
-      font-size: x-large; }
-    #mainQS .box1 p {
-      color: salmon; }
-  #mainQS .box2 {
-    grid-area: box2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-    #mainQS .box2 .title {
-      font-size: x-large; }
-    #mainQS .box2 p {
-      color: salmon; }
-  #mainQS .box3 {
-    grid-area: box3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-    #mainQS .box3 .title {
-      font-size: x-large; }
-    #mainQS .box3 p {
-      color: salmon; }
-
-.mision {
-  height: fit-content;
-  display: grid;
-  grid-template-rows: 80px auto;
-  grid-template-areas: "imgBottomQS intro2QS intro2QS" "imgBottomQS descriQS descriQS";
-  gap: 5px; }
-  .mision .imgBottomQS {
-    grid-area: imgBottomQS;
-    display: flex;
-    align-items: stretch; }
-  .mision .intro2QS {
-    grid-area: intro2QS;
-    text-align: left;
-    padding: 10px; }
-    .mision .intro2QS h2 {
-      color: #6c856c; }
-  .mision .descriQS {
-    grid-area: descriQS;
-    display: flex;
-    align-items: flex-start;
-    padding: 10px; }
-    .mision .descriQS .txQS {
-      color: whitesmoke;
-      text-align: justify;
-      font-size: large; }
-
 @media screen and (min-width: 800px) and (max-width: 1350px) {
   #mainServicios {
     display: grid;
@@ -560,6 +489,148 @@ hr {
     margin: 0; }
     .qrsServicios .vdServicios iframe {
       width: 780px; } }
+
+/* Pagina Quienes Somos*/
+#mainQS {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "imgQS imgQS imgQS" "introQS introQS introQS" "box1 box2 box3";
+  padding: 0 10px 20px 10px;
+  gap: 10px; }
+  #mainQS .imgQS {
+    grid-area: imgQS; }
+  #mainQS .introQS {
+    grid-area: introQS;
+    text-align: center;
+    padding: 30px 10px; }
+  #mainQS .box1 {
+    grid-area: box1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    #mainQS .box1 .title {
+      font-size: x-large; }
+    #mainQS .box1 p {
+      color: salmon;
+      text-align: justify; }
+  #mainQS .box2 {
+    grid-area: box2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    #mainQS .box2 .title {
+      font-size: x-large; }
+    #mainQS .box2 p {
+      color: salmon;
+      text-align: justify; }
+  #mainQS .box3 {
+    grid-area: box3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    #mainQS .box3 .title {
+      font-size: x-large; }
+    #mainQS .box3 p {
+      color: salmon;
+      text-align: justify; }
+
+.mision {
+  height: fit-content;
+  display: grid;
+  grid-template-rows: 80px auto;
+  grid-template-areas: "imgBottomQS intro2QS intro2QS" "imgBottomQS descriQS descriQS";
+  gap: 5px; }
+  .mision .imgBottomQS {
+    grid-area: imgBottomQS;
+    display: flex;
+    align-items: center; }
+  .mision .intro2QS {
+    grid-area: intro2QS;
+    text-align: left;
+    padding: 10px; }
+    .mision .intro2QS h2 {
+      color: #6c856c; }
+  .mision .descriQS {
+    grid-area: descriQS;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px; }
+    .mision .descriQS .txQS {
+      color: whitesmoke;
+      text-align: justify;
+      font-size: large; }
+
+@media screen and (max-width: 600px) {
+  #mainQS {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "imgQS" "introQS" "box1" "box2" "box3";
+    justify-content: center; }
+    #mainQS .introQS {
+      padding: 10px; }
+  .mision {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "intro2QS" "imgBottomQS" "descriQS";
+    justify-items: center;
+    align-items: center; }
+    .mision .imgBottomQS {
+      grid-area: imgBottomQS; }
+      .mision .imgBottomQS img {
+        width: 360px; }
+    .mision .intro2QS {
+      grid-area: intro2QS; }
+    .mision .descriQS {
+      grid-area: descriQS; }
+      .mision .descriQS .txQS {
+        font-size: medium; } }
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  #mainQS {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "imgQS" "introQS" "box1" "box2" "box3";
+    justify-content: center; }
+    #mainQS .introQS {
+      padding: 15px; }
+  .mision {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "intro2QS" "imgBottomQS" "descriQS";
+    justify-items: center;
+    align-items: center; }
+    .mision .imgBottomQS {
+      grid-area: imgBottomQS; }
+      .mision .imgBottomQS img {
+        width: 600px; }
+    .mision .intro2QS {
+      grid-area: intro2QS; }
+    .mision .descriQS {
+      grid-area: descriQS; }
+      .mision .descriQS .txQS {
+        font-size: large; } }
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .mision {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "intro2QS" "imgBottomQS" "descriQS";
+    justify-items: center;
+    align-items: center; }
+    .mision .imgBottomQS {
+      grid-area: imgBottomQS; }
+      .mision .imgBottomQS img {
+        width: 700px; }
+    .mision .intro2QS {
+      grid-area: intro2QS; }
+    .mision .descriQS {
+      grid-area: descriQS; }
+      .mision .descriQS .txQS {
+        font-size: large; } }
 
 /* Pagina Contactenos*/
 #mainContactenos {

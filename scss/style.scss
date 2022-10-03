@@ -582,100 +582,6 @@ hr{
    }
 }
 
-  /* Pagina Quienes Somos*/
-
-#mainQS{
-   display: grid;
-   grid-template-rows: 1fr 1fr 1fr;
-   grid-template-rows: auto;
-   grid-template-areas: "imgQS imgQS imgQS"
-                        "introQS introQS introQS"
-                        "box1 box2 box3";
-   padding: 0 10px 20px 10px;
-   gap: 10px;
-   .imgQS{
-      grid-area: imgQS;
-   }
-   .introQS{
-      grid-area: introQS;
-      text-align: center;
-      padding: 30px 10px;
-   }
-   .box1{
-      grid-area: box1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      .title{
-         font-size: x-large;
-      }
-      p{
-         color: salmon;
-      }
-   }
-   .box2{
-      grid-area: box2;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      .title{
-         font-size: x-large;
-      }
-      p{
-         color: salmon;
-      }
-   }
-   .box3{
-      grid-area: box3;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      .title{
-         font-size: x-large;
-      }
-      p{
-         color: salmon;
-      }
-   }
-
-}
-.mision{
-   height: fit-content;
-   display: grid;
-   grid-template-rows: 80px auto;
-   grid-template-areas: "imgBottomQS intro2QS intro2QS"
-                        "imgBottomQS descriQS descriQS";
-   gap: 5px;
-   .imgBottomQS{
-      grid-area: imgBottomQS;
-      display: flex;
-      align-items: stretch;
-   }
-   .intro2QS{
-      grid-area:intro2QS;
-      text-align: left;
-      padding: 10px;
-      h2{
-         color: rgb(108, 133, 108);
-      }
-      
-   }
-   .descriQS{
-      grid-area: descriQS;
-      display: flex;
-      align-items: flex-start;
-      padding: 10px;
-      .txQS{
-         color: whitesmoke;
-         text-align: justify;
-         font-size: large;
-      }
-   }
-}
-
 @media screen and (min-width: 800px) and (max-width: 1350px) {
    #mainServicios{
       display: grid;
@@ -736,6 +642,211 @@ hr{
       }
    }
 }
+
+  /* Pagina Quienes Somos*/
+
+#mainQS{
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   grid-template-areas: "imgQS imgQS imgQS"
+                        "introQS introQS introQS"
+                        "box1 box2 box3";
+   padding: 0 10px 20px 10px;
+   gap: 10px;
+   .imgQS{
+      grid-area: imgQS;
+   }
+   .introQS{
+      grid-area: introQS;
+      text-align: center;
+      padding: 30px 10px;
+   }
+   .box1{
+      grid-area: box1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .title{
+         font-size: x-large;
+      }
+      p{
+         color: salmon;
+         text-align: justify;
+      }
+   }
+   .box2{
+      grid-area: box2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .title{
+         font-size: x-large;
+      }
+      p{
+         color: salmon;
+         text-align: justify;
+      }
+   }
+   .box3{
+      grid-area: box3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .title{
+         font-size: x-large;
+      }
+      p{
+         color: salmon;
+         text-align: justify;
+      }
+   }
+
+}
+.mision{
+   height: fit-content;
+   display: grid;
+   grid-template-rows: 80px auto;
+   grid-template-areas: "imgBottomQS intro2QS intro2QS"
+                        "imgBottomQS descriQS descriQS";
+   gap: 5px;
+   .imgBottomQS{
+      grid-area: imgBottomQS;
+      display: flex;
+      align-items: center;
+   }
+   .intro2QS{
+      grid-area:intro2QS;
+      text-align: left;
+      padding: 10px;
+      h2{
+         color: rgb(108, 133, 108);
+      }
+      
+   }
+   .descriQS{
+      grid-area: descriQS;
+      display: flex;
+      align-items: flex-start;
+      padding: 10px;
+      .txQS{
+         color: whitesmoke;
+         text-align: justify;
+         font-size: large;
+      }
+   }
+}
+
+@media screen and (max-width: 600px) {
+   #mainQS{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-areas: "imgQS"
+                           "introQS"
+                           "box1"
+                           "box2"
+                           "box3";
+      justify-content: center;
+      .introQS{
+         padding: 10px;
+      }
+   }
+   .mision{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-areas: "intro2QS"
+                           "imgBottomQS"
+                           "descriQS";
+      justify-items: center;
+      align-items: center;
+      .imgBottomQS{
+         grid-area: imgBottomQS;
+         img{
+            width: 360px;
+         }
+      }
+      .intro2QS{
+         grid-area: intro2QS;
+      }
+      .descriQS{
+         grid-area: descriQS;
+         .txQS{
+            font-size: medium;
+         }
+      }
+   }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+   #mainQS{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-areas: "imgQS"
+                           "introQS"
+                           "box1"
+                           "box2"
+                           "box3";
+      justify-content: center;
+      .introQS{
+         padding: 15px;
+      }
+   }
+   .mision{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-areas: "intro2QS"
+                           "imgBottomQS"
+                           "descriQS";
+      justify-items: center;
+      align-items: center;
+      .imgBottomQS{
+         grid-area: imgBottomQS;
+         img{
+            width: 600px;
+         }
+      }
+      .intro2QS{
+         grid-area: intro2QS;
+      }
+      .descriQS{
+         grid-area: descriQS;
+         .txQS{
+            font-size: large;
+         }
+      }
+   }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+   .mision{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-areas: "intro2QS"
+                           "imgBottomQS"
+                           "descriQS";
+      justify-items: center;
+      align-items: center;
+      .imgBottomQS{
+         grid-area: imgBottomQS;
+         img{
+            width: 700px;
+         }
+      }
+      .intro2QS{
+         grid-area: intro2QS;
+      }
+      .descriQS{
+         grid-area: descriQS;
+         .txQS{
+            font-size: large;
+         }
+      }
+   }
+}
+
+
 
   /* Pagina Contactenos*/
 #mainContactenos{
